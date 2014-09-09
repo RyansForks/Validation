@@ -65,7 +65,7 @@ public function store()
     }
     catch (FormValidationException $e)
     {
-        return Redirect::back()->withInput()->withErrors($e->getErrors());
+        return Redirect::back()->withInput()->withErrors($e);
     }
 
 }
